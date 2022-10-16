@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.screen_height_expand {
+    height: 97vh;
+}
+
+
+.custom_img_container {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.custom_img_container > .custom_img {
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    transform: translateX(50%);
+}
+
+.custom_hr {
+    border-top: 4px dotted gray;
+}
+
